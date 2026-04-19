@@ -1,0 +1,256 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1776597684688,
+  "projectRoot": "/Users/winning/projects/dalbit-sleep",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "react",
+        "version": "18.3.1",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "18.3.1",
+        "category": "frontend"
+      },
+      {
+        "name": "vite",
+        "version": "6.0.5",
+        "category": "build"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc -b && vite build",
+      "preview": "vite preview"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 1,
+      "lastAccessed": 1776597684670,
+      "keyFiles": [
+        "index.html"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 2,
+      "lastAccessed": 1776597684673,
+      "keyFiles": [
+        "PRD.md",
+        "plan.md"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 5,
+      "lastAccessed": 1776597684673,
+      "keyFiles": [
+        "App.tsx",
+        "index.css",
+        "main.tsx",
+        "tokens.ts",
+        "vite-env.d.ts"
+      ]
+    },
+    "dist/assets": {
+      "path": "dist/assets",
+      "purpose": "Static assets",
+      "fileCount": 2,
+      "lastAccessed": 1776597684673,
+      "keyFiles": [
+        "index-CxwT6jZW.js",
+        "index-DhXV5w9-.css"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 6,
+      "lastAccessed": 1776597684674,
+      "keyFiles": [
+        "LoginBottomSheet.tsx",
+        "MoonProgress.tsx",
+        "MoonVisualizer.tsx"
+      ]
+    },
+    "src/pages": {
+      "path": "src/pages",
+      "purpose": "Page components",
+      "fileCount": 7,
+      "lastAccessed": 1776597684674,
+      "keyFiles": [
+        "FullMoonPage.tsx",
+        "MainPage.tsx",
+        "OnboardingPage.tsx"
+      ]
+    },
+    "src/types": {
+      "path": "src/types",
+      "purpose": "Type definitions",
+      "fileCount": 1,
+      "lastAccessed": 1776597684674,
+      "keyFiles": [
+        "index.ts"
+      ]
+    },
+    "src/utils": {
+      "path": "src/utils",
+      "purpose": "Utility functions",
+      "fileCount": 3,
+      "lastAccessed": 1776597684674,
+      "keyFiles": [
+        "dateUtils.ts",
+        "moonUtils.ts",
+        "statsUtils.ts"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/App.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1776598624414,
+      "type": "file"
+    },
+    {
+      "path": "src/hooks/useStorage.ts",
+      "accessCount": 2,
+      "lastAccessed": 1776597839381,
+      "type": "file"
+    },
+    {
+      "path": "src/main.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776598298951,
+      "type": "file"
+    },
+    {
+      "path": "src/utils/moonUtils.ts",
+      "accessCount": 2,
+      "lastAccessed": 1776598635399,
+      "type": "file"
+    },
+    {
+      "path": "src/hooks/useMoonState.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776597806029,
+      "type": "file"
+    },
+    {
+      "path": "src/index.css",
+      "accessCount": 1,
+      "lastAccessed": 1776597992747,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 1,
+      "lastAccessed": 1776598010021,
+      "type": "directory"
+    },
+    {
+      "path": ".claude/launch.json",
+      "accessCount": 1,
+      "lastAccessed": 1776598012576,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/MainPage.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776598160032,
+      "type": "file"
+    },
+    {
+      "path": "public/assets/logo-600.html",
+      "accessCount": 1,
+      "lastAccessed": 1776598790160,
+      "type": "file"
+    },
+    {
+      "path": "public/assets/thumbnail-1932.html",
+      "accessCount": 1,
+      "lastAccessed": 1776598812489,
+      "type": "file"
+    },
+    {
+      "path": "take-screenshots.mjs",
+      "accessCount": 1,
+      "lastAccessed": 1776598830907,
+      "type": "file"
+    },
+    {
+      "path": "public/assets/logo-600x600.png",
+      "accessCount": 1,
+      "lastAccessed": 1776598854034,
+      "type": "file"
+    },
+    {
+      "path": "public/assets/screenshot-1-main.png",
+      "accessCount": 1,
+      "lastAccessed": 1776598857532,
+      "type": "file"
+    },
+    {
+      "path": "public/assets/screenshot-2-record.png",
+      "accessCount": 1,
+      "lastAccessed": 1776598870588,
+      "type": "file"
+    },
+    {
+      "path": "public/assets/thumbnail-1932x828.png",
+      "accessCount": 1,
+      "lastAccessed": 1776598871181,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

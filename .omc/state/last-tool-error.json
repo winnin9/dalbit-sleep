@@ -1,0 +1,7 @@
+{
+  "tool_name": "mcp__Claude_Preview__preview_eval",
+  "tool_input_preview": "{\"serverId\":\"9d3c5911-52ec-4504-afd8-14667fc5f39d\",\"expression\":\"\\n// 이미지 URL 상태 확인\\nconst imgs = document.querySelectorAll('img');\\nreturn Array.from(imgs).map(img => ({ src: img.src, broken: !img.co...",
+  "error": "Eval failed: SyntaxError: Illegal return statement",
+  "timestamp": "2026-04-19T11:34:06.945Z",
+  "retry_count": 1
+}

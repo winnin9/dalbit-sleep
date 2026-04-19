@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1932px; height: 828px; overflow: hidden; }
+  .wrap {
+    width: 1932px;
+    height: 828px;
+    background: linear-gradient(120deg, #0D1B2A 0%, #1a1040 45%, #3D2B8A 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 160px;
+    position: relative;
+    overflow: hidden;
+  }
+  /* 배경 장식 */
+  .bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(107,78,255,0.2) 0%, transparent 70%);
+  }
+  .bg-c1 { width: 600px; height: 600px; right: 350px; top: -100px; }
+  .bg-c2 { width: 400px; height: 400px; left: 200px; bottom: -150px; }
+
+  /* 왼쪽 텍스트 영역 */
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 720px;
+    z-index: 1;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(107,78,255,0.3);
+    border: 1px solid rgba(107,78,255,0.6);
+    border-radius: 30px;
+    padding: 8px 24px;
+    width: fit-content;
+  }
+  .badge-text {
+    font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #B39DFF;
+    letter-spacing: 1px;
+  }
+  .app-name {
+    font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    color: #F0F4F8;
+    letter-spacing: -4px;
+    line-height: 1.05;
+    text-shadow: 0 4px 30px rgba(107,78,255,0.4);
+  }
+  .copy {
+    font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: rgba(240,244,248,0.7);
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+  }
+  .copy strong {
+    color: #F5C842;
+    font-weight: 700;
+  }
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #6B4EFF;
+    border-radius: 50px;
+    padding: 20px 48px;
+    width: fit-content;
+    margin-top: 8px;
+  }
+  .cta-text {
+    font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.5px;
+  }
+
+  /* 오른쪽 달 영역 */
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    flex-shrink: 0;
+  }
+  .moon-wrap {
+    position: relative;
+    width: 480px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .moon-glow {
+    position: absolute;
+    width: 480px; height: 480px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(245,200,66,0.2) 0%, transparent 70%);
+  }
+  .moon-img {
+    width: 380px;
+    height: 380px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 60px rgba(245,200,66,0.6));
+    position: relative;
+    z-index: 1;
+  }
+  /* 달빛 조각 표시 */
+  .pieces {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    color: rgba(240,244,248,0.8);
+    font-weight: 600;
+  }
+  .pieces span { color: #F5C842; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bg-circle bg-c1"></div>
+    <div class="bg-circle bg-c2"></div>
+
+    <div class="left">
+      <div class="badge">
+        <div class="badge-text">🌙 수면 기록 앱</div>
+      </div>
+      <div class="app-name">달빛수면</div>
+      <div class="copy">
+        잘 잔 날 달빛을 모아<br>
+        <strong>보름달 완성</strong>하고 토스 포인트 받기
+      </div>
+      <div class="cta">
+        <div class="cta-text">지금 시작하기 →</div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="moon-wrap">
+        <div class="moon-glow"></div>
+        <img class="moon-img" src="https://static.toss.im/2d-emojis/png/4x/u1F315.png" crossorigin="anonymous" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>

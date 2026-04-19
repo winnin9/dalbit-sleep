@@ -1,0 +1,68 @@
+:root {
+  --color-bg: #0D1B2A;
+  --color-bg-surface: #132236;
+  --color-bg-card: #1A2E45;
+  --color-moon: #F5C842;
+  --color-moon-glow: rgba(245, 200, 66, 0.3);
+  --color-primary: #6B4EFF;
+  --color-primary-light: #9B7EFF;
+  --color-text: #F0F4F8;
+  --color-text-secondary: #8FA0B4;
+  --color-text-muted: #4A6080;
+  --color-star-active: #F5C842;
+  --color-star-inactive: #2A3F58;
+  --color-piece: #60A5FA;
+  --color-piece-glow: rgba(96, 165, 250, 0.25);
+  --color-success: #34D399;
+  --color-border: #1E3248;
+
+  font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+  margin: 0 auto;
+  position: relative;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+textarea, input {
+  font-family: inherit;
+}
+
+/* 스크롤 스타일 */
+.scroll-y {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

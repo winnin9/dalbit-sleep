@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 600px; height: 600px; overflow: hidden; }
+  .wrap {
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(145deg, #0D1B2A 0%, #1a1040 50%, #2a1560 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  /* 배경 글로우 원들 */
+  .glow1 {
+    position: absolute;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(107,78,255,0.25) 0%, transparent 70%);
+    top: 80px; left: 50%; transform: translateX(-50%);
+  }
+  .glow2 {
+    position: absolute;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(245,200,66,0.15) 0%, transparent 70%);
+    top: 100px; left: 50%; transform: translateX(-50%);
+  }
+  .moon-img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 60px rgba(245,200,66,0.6));
+    position: relative;
+    z-index: 1;
+  }
+  .title {
+    font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    color: #F0F4F8;
+    letter-spacing: -3px;
+    margin-top: 20px;
+    text-shadow: 0 2px 20px rgba(107,78,255,0.6);
+    position: relative;
+    z-index: 1;
+  }
+  .subtitle {
+    font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: rgba(240,244,248,0.55);
+    letter-spacing: 2px;
+    margin-top: 8px;
+    position: relative;
+    z-index: 1;
+  }
+</style>
+</head>
+  <div class="wrap">
+    <div class="glow1"></div>
+    <div class="glow2"></div>
+    <img class="moon-img" src="https://static.toss.im/2d-emojis/png/4x/u1F315.png" crossorigin="anonymous" />
+  </div>
+</body>
+</html>
