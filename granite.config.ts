@@ -5,7 +5,7 @@ export default defineConfig({
   brand: {
     displayName: '달빛수면',
     primaryColor: '#6B4EFF',
-    icon: '', // 앱인토스 콘솔에서 아이콘 업로드 후 URL 입력
+    icon: 'https://static.toss.im/appsintoss/30067/52d87a07-d44a-4e30-a2c1-36f0c9904b63.png',
   },
   permissions: [],
   navigationBar: {
