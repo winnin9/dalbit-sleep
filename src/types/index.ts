@@ -13,7 +13,7 @@ export type SleepRecord = {
   date: string // 'YYYY-MM-DD' (기상일 기준)
   stars: 1 | 2 | 3 | 4 | 5
   memo?: string // 최대 100자
-  moonPieces: 1 | 2 // 별점에 따른 달빛 조각 수 (항상 최소 1조각)
+  moonPieces: 1 // 기록 1회 = 달빛 조각 1개 균일 지급 (Option C)
   createdAt: number // timestamp
 }
 

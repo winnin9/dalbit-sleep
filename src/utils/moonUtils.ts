@@ -7,7 +7,7 @@ export const FULL_MOON_PIECES = 15     // 일반 보름달
  * 별점에 따른 달빛 조각 수 반환 (PRD v1.1 - Option C)
  * 1~5점 모두 1조각 반환 (기록 자체를 보상)
  */
-export function getMoonPieces(stars: number): 1 | 2 {
+export function getMoonPieces(_stars: number): 1 {
   return 1
 }
 

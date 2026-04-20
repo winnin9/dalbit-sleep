@@ -20,8 +20,8 @@ export default function RecordCompletePage({ record, moonState, targetPieces, on
     return () => { clearTimeout(t1); clearTimeout(t2) }
   }, [])
 
-  const isGoodSleep = record.stars >= 4 // 2조각 (잘 잠)
-  const pieceCount = record.moonPieces   // 항상 1 또는 2
+  const isGoodSleep = record.stars >= 4 // UI 색상 분기용 (조각 수와 무관)
+  const pieceCount = record.moonPieces   // 항상 1 (Option C)
 
   return (
     <div
